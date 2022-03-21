@@ -1,0 +1,10 @@
+server:
+  port: 9000
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: first_route
+          uri: https://github.com/yao5758
+          predicates:
+            - Path=/test
